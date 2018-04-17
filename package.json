@@ -13,5 +13,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:marcidenmark/react-redux-netflix-mini.git",
+  "author": "marci papineau <marcidenmark@hotmail.com>",
+  "license": "MIT"
 }
