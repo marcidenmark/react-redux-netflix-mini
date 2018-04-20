@@ -21,7 +21,8 @@ class Movies extends Component {
 		} = this.props
 
 		return (
-
+			<div
+			className={movie }
 			)
 	}
 
