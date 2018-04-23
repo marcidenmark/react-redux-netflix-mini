@@ -6,8 +6,8 @@ import registerServiceWorker from './registerServiceWorker';
 // all above code came with the create react app
 import { Provider } from 'react-redux';
 import { createStore }from 'react-redux';
-//const reducers = require ('/modules');
-//const routes = require ('/routes');
+const reducers = require ('./modules');
+const routes = require ('./routes');
 //______________________________
 //See page 289 for explaining of reduxers
 // module.exports = render((

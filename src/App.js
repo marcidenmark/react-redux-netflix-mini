@@ -1,6 +1,8 @@
 import React, { Component } from 'react'; //free code from React
 import './App.css';
 import Movie from './components/Movie';
+import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-router';
+
 
 class App extends Component {
   render() {

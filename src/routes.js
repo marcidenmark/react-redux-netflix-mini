@@ -1,24 +1,26 @@
 import React from 'react';
-const {
-	Router
-	Router
-	IndexRoute,
-	browserHistory
-} = require ('react-router')
-const App = require('App.js')
-const Movies =  require('components/Movies.js')
-const Movie = require('components/Movie.js')
+import App from './App.js'
+import Movies from './components/Movies.js';
+import Movie from './components/Movie.js';
+import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-router-dom';
+
+// const {
+// 	Router,
+// 	Route,
+// 	IndexRoute,
+// 	browserHistory,
+// } = require ('react-router')
 
 module.exports = (
 	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Movies} />
-				<Route path="movies" component {Movies}>
-					<Route path=":id" component {Movie} />
+				<Route path="movies" component={Movies}>
+					<Route path=":id" component= {Movie} />
 				</Route>
 		</Route>
 	</Router>
-	)
+)
 //With React-Router every route can be declared by nested *Route components*
 //The components take 2 properites
 //1. path URL
