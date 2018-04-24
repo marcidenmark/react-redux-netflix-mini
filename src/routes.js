@@ -2,19 +2,23 @@ import React from 'react';
 import App from './App.js'
 import Movies from './components/Movies.js';
 import Movie from './components/Movie.js';
-import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-router-dom';
+// import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+// import { BrowserRouter } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, IndexRoute } from 'react-router-dom';
+// import { Router, Route, hashHistory } from 'react-router'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // const {
 // 	Router,
 // 	Route,
 // 	IndexRoute,
-// 	browserHistory,
+// 	BrowserRouter,
 // } = require ('react-router')
 
 module.exports = (
-	<Router history={browserHistory}>
+	<Router history={hashHistory}>
 		<Route path="/" component={App}>
-			<IndexRoute component={Movies} />
+			<Route component={Movies} />
 				<Route path="movies" component={Movies}>
 					<Route path=":id" component= {Movie} />
 				</Route>
